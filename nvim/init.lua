@@ -784,6 +784,7 @@ require('lazy').setup({
               },
             },
             { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
+            { "filename" }
           },
           lualine_x = {
             -- stylua: ignore
@@ -901,7 +902,7 @@ require('lazy').setup({
     opts = function()
       local logo = require("ascii").get_random("text", "neovim")
       logo = table.concat(logo, "\n")
-      logo = string.rep("\n", 8) .. logo .. "\n\n"
+      logo = string.rep("\n", 2) .. logo .. "\n\n"
 
       local opts = {
         theme = "doom",
