@@ -159,6 +159,11 @@ require('lazy').setup({
   --
   -- Use `opts = {}` to force a plugin to be loaded.
   --
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = { current_line_blame = true }
+  },
+  --
   --  This is equivalent to:
   --    require('Comment').setup({})
 
